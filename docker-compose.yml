@@ -1,0 +1,19 @@
+version: '3'
+services:
+  backend:
+    build:
+      context: Dockerfile./backend  
+    ports:
+      - "3000:3000"  
+
+  postgres:
+    image: postgres:latest
+    environment:
+      POSTGRES_DB: mydatabase
+      POSTGRES_USER: myuser
+      POSTGRES_PASSWORD: mypassword
+
+  mongodb:
+    image: mongo:latest
+    ports:
+      - "27017:27017"

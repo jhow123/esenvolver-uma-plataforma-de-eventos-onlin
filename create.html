@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criação/Edição de Eventos</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="date"],
+        textarea {
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        button[type="submit"] {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Criação/Edição de Eventos</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Listagem de Eventos</a></li>
+                <li><a href="event.html">Detalhes do Evento</a></li>
+                <li><a href="registration.html">Inscrição em Eventos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Crie ou Edite um Evento</h2>
+        <form>
+            <label for="eventName">Nome do Evento:</label>
+            <input type="text" id="eventName" name="eventName" required>
+
+            <label for="eventDate">Data do Evento:</label>
+            <input type="date" id="eventDate" name="eventDate" required>
+
+            <label for="eventDescription">Descrição do Evento:</label>
+            <textarea id="eventDescription" name="eventDescription" required></textarea>
+
+            <button type="submit">Salvar Evento</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

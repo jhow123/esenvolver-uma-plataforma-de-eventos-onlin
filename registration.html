@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscrição em Eventos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Inscrição em Eventos</h1>
+        <form id="registration-form">
+            <label for="userName">Nome Completo:</label>
+            <input type="text" id="userName" name="userName" required>
+            
+            <label for="userEmail">Endereço de Email:</label>
+            <input type="email" id="userEmail" name="userEmail" required>
+            
+            <label for="eventId">Selecione o Evento:</label>
+            <select id="eventId" name="eventId" required>
+                <option value="1">Evento 1</option>
+                <option value="2">Evento 2</option>
+                <option value="3">Evento 3</option>
+                <!-- Adicione mais eventos conforme necessário -->
+            </select>
+            
+            <button type="submit">Inscrever-se</button>
+        </form>
+        <a href="index.html">Voltar para a Listagem de Eventos</a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
